@@ -1,0 +1,39 @@
+{
+    "name": "aspirin1988/socialite",
+    "description": "Laravel 5 socialite VK.com Mail.ru OK.ru",
+    "keywords": [
+        "laravel 5",
+        "socialite",
+        "VK.com",
+        "Mail.ru",
+        "OK.ru"
+    ],
+    "authors": [
+        {
+            "name": "Aspirin1988",
+            "email": "Aspirins24@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/aspirin1988/ruslug",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aspirin1988\\Ruslug\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aspirin1988\\Ruslug\\RuslugServiceProvider"
+            ],
+            "aliases": {
+                "Slug": "Aspirin1988\\Ruslug\\RuslugFacade"
+            }
+        }
+    }
+}
