@@ -15,24 +15,25 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/aspirin1988/ruslug",
+    "homepage": "https://github.com/aspirin1988/socialite",
     "license": "MIT",
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
+        "php": ">=7.0",
+        "laravel/socialite": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "Aspirin1988\\Ruslug\\": "src/"
+            "Aspirin1988\\Socialite\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Aspirin1988\\Ruslug\\RuslugServiceProvider"
+                "Aspirin1988\\Socialite\\MailruProvider",
+                "Aspirin1988\\Socialite\\OKruProvider",
+                "Aspirin1988\\Socialite\\VkontakteProvider"
             ],
             "aliases": {
-                "Slug": "Aspirin1988\\Ruslug\\RuslugFacade"
             }
         }
     }
