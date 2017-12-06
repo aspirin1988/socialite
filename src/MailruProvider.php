@@ -1,6 +1,6 @@
 <?php
 
-    namespace App;
+    namespace Aspirin1988\Socialite;
 
     use Illuminate\Support\Arr;
     use Laravel\Socialite\Two\AbstractProvider;
