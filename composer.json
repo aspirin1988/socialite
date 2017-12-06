@@ -29,9 +29,6 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aspirin1988\\Socialite\\MailruProvider",
-                "Aspirin1988\\Socialite\\OKruProvider",
-                "Aspirin1988\\Socialite\\VkontakteProvider"
             ],
             "aliases": {
             }
