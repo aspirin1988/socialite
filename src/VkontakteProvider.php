@@ -21,6 +21,8 @@
          */
         protected $scopeSeparator = ' ';
 
+        protected $apiVersion = '5.101';
+
         /**
          * The scopes being requested.
          *
@@ -108,6 +110,7 @@
                     'access_token' => $token['token'],
                     'user_ids'     => $token['user_id'],
                     'fields'       => implode(',', $this->scopesUser),
+                    'v'       => $this->apiVersion,
                 ],
                 'headers' => [
                     'Accept'        => 'application/json',
