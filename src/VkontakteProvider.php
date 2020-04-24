@@ -79,12 +79,6 @@ class VkontakteProvider extends AbstractProvider implements ProviderInterface
         return 'https://oauth.vk.com/access_token';
     }
 
-    /**
-     * Get the POST fields for the token request.
-     *
-     * @param string $code
-     * @return array
-     */
     protected function getTokenFields($code)
     {
         return array_add(
